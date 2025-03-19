@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ringtone" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/sea_green</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:statusBarColor">@color/sea_green</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyTheme</item>
+    </style>
+    <!--Menu popup style-->
+    <style name="MyTheme" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/baseline_menu_24</item>
+    </style>
+    <!--Menu popup bg-color-->
+    <style name="ThemeOverlay.popupTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorOnBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.Ringtone" parent="Base.Theme.Ringtone" />
+</resources>

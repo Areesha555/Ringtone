@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@id/adView2">
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_local_phone_24"
+        android:text="Set as Contact Ringtone" />
+
+    <Button
+        android:id="@+id/alarmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set as Alarm Ringtone" />
+
+    <Button
+        android:id="@+id/smsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set as SMS Ringtone" />
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView2"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_ad_id"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
